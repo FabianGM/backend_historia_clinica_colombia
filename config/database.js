@@ -9,7 +9,7 @@ const db = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.D
 // Probar la conexión
 db.authenticate()
   .then(() => {
-    console.log('La conexión a la base de datos fue exitosa.');
+    console.log('La conexión a la base de datos funciono.');
   })
   .catch(err => {
     console.error('No se pudo conectar a la base de datos:', err);
